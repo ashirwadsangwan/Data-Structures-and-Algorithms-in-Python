@@ -58,3 +58,25 @@ def lessThan(num, identifier):
     return count
 
 ```
+
+### P3:
+```
+The task here is to build a simple calculator which can perform simple arithmetics.
+```
+
+```python
+def calculator(num1, num2, operator):
+    
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1-num2
+    elif operator == '*':
+        return num1*num2
+    elif operator == '/':
+        return num1/num2
+    else:
+        return "Operator is not found!"
+
+
+```
