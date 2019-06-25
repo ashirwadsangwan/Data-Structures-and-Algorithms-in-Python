@@ -16,6 +16,11 @@ So, if we take first character `c` and fix it then we have 5 places to fill so t
 def toString(List):
     return ''.join(List)
 
+def swap(x, y):
+    temp = x
+    x = y
+    y = temp
+
 def permute(string, low, high):
     
     '''
@@ -29,9 +34,9 @@ def permute(string, low, high):
         print(toString(string))
 
     else:
-        for i in range(low, high + 1):
-            string[low], string[i] = string[i], string[low]
+        for i in range(low + 1, high + 1):
+            swap(string[low], string[i])
             permute(string, low+1, high)
-            string[low], string[i] = string[i], string[low]
+            swap(string[low], string[i])
 
 ```
