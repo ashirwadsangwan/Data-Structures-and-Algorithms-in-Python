@@ -39,8 +39,7 @@ def permute(string, low, high):
 
 ### P2: 
 ```
-Write a Python program that takes a number as an input and returns the number of times
-this number needs to be divided by 2 such that it gives you a number less than 2.
+Write a Python program that takes a number as an input and returns the number of times this number needs to be divided by 2 such that it gives you a number less than 2.
 ```
 It is a simple problem, we'll start a counter at the top which will count the number of times the loop is iterating. The loop will keep running until the the condition inside the loop is false.
 
@@ -58,8 +57,4 @@ def lessThan(num, identifier):
     
     return count
 
-if __name__ == "__main__":
-    num = 16
-    identifier = 2
-    print(lessThan(num, identifier))
 ```
