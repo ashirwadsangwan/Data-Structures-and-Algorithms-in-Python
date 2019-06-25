@@ -3,7 +3,8 @@ This chapter introduces you to the basics of Pyhton programming and the data typ
 ## Projects
 ### P1: 
 ```
-Write a Python program that outputs all possible strings formed by using the characters `"c","a","t","d","o","g"` exactly once.
+Write a Python program that outputs all possible strings formed by using the characters 
+`"c","a","t","d","o","g"` exactly once.
 
 ```
 To do this task first what we need to understand the problem and the problem is asking us to write all the formations of the words which contain all of the above written characters exactly once.
