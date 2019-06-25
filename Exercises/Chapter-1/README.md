@@ -80,3 +80,56 @@ def calculator(num1, num2, operator):
 
 
 ```
+
+### P4: Birthday Paradox
+```
+The problem is simple. But we need to make some assumptions beforehand.
+    Assumptions:
+                1. Birthdays of n people are unrelated. i.e. no twins.
+                2. Each of 365 days are equally likely to be someone's birthday.
+                3. `n` is less than or equal to 365.
+    Now, if there are 366 people, we know there are atleast 2 people who share their birthday so number
+    of people should be less than or equal to 365.
+
+    Now, There are `n` people and 365 possibilities of birthdays so the total cases for all of these
+    `n` people would be `pow(365, n)`.
+
+    But finding the people who have the same birthdays is pretty hectic task but what we can do is
+    we can find the people who have different birthdays and subtract them from 1 to find the desired
+    results.
+```
+
+```python
+def birthdayParadox(n):
+
+    total_cases = pow(365, n)
+    permutations = permutation(365, n)
+
+    return (1-(permutations/total_cases))
+
+    
+def factorial(n): return 1 if n==0 else n*factorial(n-1)
+    
+def permutation(n, k):
+    return factorial(n)/factorial(n-k)
+
+```
+
+### P5:
+```
+Count the frequency of each word in a given list.
+
+```
+
+```python
+def countWord(List):
+    wordCounter  = {}
+
+    for word in List:
+        if word not in wordCounter:
+            wordCounter[word] = 1
+        else:
+            wordCounter[word] += 1
+
+    return wordCounter
+```
